@@ -59,6 +59,9 @@
     "webpack-merge": "^4.2.2"
   },
   "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
     "validate-commit-msg": {
       "helpMessage": "Tips: please use 'git cz' to commit changes"
     }
