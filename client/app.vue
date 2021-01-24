@@ -2,7 +2,8 @@
   <div id="app">
     <div id="cover"></div>
     <Header></Header>
-    <todo></todo>
+    <!-- <todo></todo> -->
+    <router-view />
     <Footer></Footer>
   </div>
 </template>
@@ -10,15 +11,13 @@
 <script>
 import Header from './layout/header.vue'
 import Footer from './layout/footer.jsx'
-import Todo from './views/todo/todo.vue'
 
 console.log(Header.__docs)
 
 export default {
   components: {
     Header,
-    Footer,
-    Todo
+    Footer
   }
 }
 </script>
@@ -42,5 +41,3 @@ export default {
   z-index -1
 }
 </style>
-
-
